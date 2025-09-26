@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cadastro de Cliente</title>
+</head>
+<style>
+    label{
+        color: red;
+    }
+    legend{
+        color: red;
+    }
+   body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+   }
+   h1{
+    text-align: right;
+    border-bottom: solid #909 2px;
+    color: blueviolet;
+   }
+
+   img{
+    float: left;
+   }
+   label{
+    display: inline-block;
+
+    width: 60px;
+   }
+   input,
+   textarea{
+    background-color: red;
+    border-style: none;
+   }
+   input[type ="text"],
+   input[type ="password"],
+   input[type ="email"],
+   textarea{
+    width: 80%;
+   }
+   input[type="submit"]{
+    width: 240px;
+   }
+</style>
+<body>
+<img src="form1_back 1.jpg" alt="formulario">
+<h1>Dados da conta</h1>
+
+<form method="post" id="contato">
+
+<fieldset style="border: solid; color: darkred;"> 
+<legend>Dados Pessoais </legend>
+
+<p>
+    <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"  placeholder="Digite o nome do cliente"/></p>
+
+<p>
+    <label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono"  placeholder="Digite o endereço de email"> </p> 
+ </fieldset> 
+
+ <fieldset style="border: solid; color: darkred;">
+<legend>Dados da conta</legend>
+
+<p>
+    <label for="senha">senha:</label> <input type="text" name="senha" id="senha"  placeholder="password"/></p>
+
+<p>
+    <label for="frase">Frase opcional</label>
+<textarea name="frase" id="frase"></textarea>
+</p>
+</fieldset>
+
+<input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
