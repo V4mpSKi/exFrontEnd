@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mostrar e esconder</title>
+</head>
+<style>
+    body{
+        background-color: green;
+    }
+    button{
+        color: darkred;
+        background-color: black;
+    }
+</style>
+<body>
+    <button onclick="mostrar()">Mostrar corpo</button>
+    <button  onclick="esconder()">Esconder corpo</button>
+    <p id="texto" style="display: none;">Esse é o corpo escodido, já sabe muito...</p>
+    <script>
+        function mostrar() {
+            document.getElementById("texto").style.display = "block"
+        }
+        function esconder() {
+            document.getElementById("texto").style.display = "none";
+        }
+    </script>
+</body>
+</html>
